@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.post {
+  padding: 20px;
+  margin: 10px;
+  background-color: lightgray;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.post:hover {
+  background-color: #ffffff;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+p {
+  color: grey;
+}
+
+@media (min-width: 765px) {
+  section {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
